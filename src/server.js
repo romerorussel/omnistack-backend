@@ -4,7 +4,7 @@ const path = require('path');
 const cors = require('cors'); //Importação do CORS
 
 const app = express();
-const server = require('http').Server(app);
+const server = require("http").Server(app);
 const io = require('socket.io')(server)
 
 io.on('connection', socket => {
